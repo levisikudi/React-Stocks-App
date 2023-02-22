@@ -26,6 +26,11 @@ app.use(express.static(path.join(__dirname, 'build')))
 
 
 
+
+
+
+
+
 // Catch-all route
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
